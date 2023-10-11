@@ -11,629 +11,66 @@
 </head>
 
 <body>
-  <section class="first-screen__section">
     <header class="header" id="header">
-      <div class="header__row">
-        <a href="/">
-          <img class="header__logo logo" src="/assets/img/header/Лого.png" alt="Логотип компании NURA ELITE" />
-        </a>
-        <div class="header__links">
-          <div class="social-phone">
-            <a class="header__social" href="#">
-              <svg class="whatsapp-icon icon-link" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                viewBox="0 0 20 19" fill="none">
-                <path fill="#FFFFFF"
-                  d="M17.09 2.76A10.19 10.19 0 0 0 10.04 0C4.55 0 .1 4.22.08 9.41a9 9 0 0 0 1.33 4.71L0 19l5.28-1.3a10.4 10.4 0 0 0 4.76 1.14c5.49 0 9.96-4.23 9.96-9.42a9.1 9.1 0 0 0-2.91-6.66Zm-7.05 14.49a8.63 8.63 0 0 1-4.21-1.1l-.3-.16-3.14.77.84-2.88-.2-.3A7.5 7.5 0 0 1 1.77 9.4c0-4.31 3.71-7.82 8.28-7.82 2.2 0 4.28.82 5.85 2.3a7.57 7.57 0 0 1 2.42 5.53c0 4.32-3.72 7.83-8.28 7.83Z" />
-                <path fill="#FFFFFF"
-                  d="M14.58 11.39c-.25-.12-1.47-.7-1.7-.77-.23-.08-.4-.12-.56.12-.16.23-.64.76-.79.92-.14.16-.29.18-.53.06-.25-.12-1.06-.37-2-1.17A7.18 7.18 0 0 1 7.6 8.92c-.15-.23-.02-.36.1-.48.12-.1.26-.27.38-.41.13-.14.17-.24.25-.4.08-.15.04-.29-.02-.4l-.77-1.75c-.2-.46-.4-.4-.56-.4l-.47-.01a.94.94 0 0 0-.67.3c-.23.23-.87.8-.87 1.95 0 1.16.9 2.28 1.02 2.44.12.15 1.75 2.53 4.25 3.55.6.24 1.06.39 1.42.5.6.17 1.14.15 1.56.09.48-.07 1.48-.57 1.68-1.12.21-.55.21-1.02.15-1.12-.06-.1-.23-.16-.48-.27Z" />
-              </svg>
-            </a>
-            <div class="tel-contacts">
-              <a href="tel:+77000011888">
-                <svg class="phone-icon icon-link" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                  viewBox="0 0 23 24" fill="none">
-                  <path fill="#FFFFFF"
-                    d="m20.3 22.7 2.4-4.8-6.8-5-3.2 2.3a4.8 4.8 0 0 1-4.5-4.6l2.3-3.1-5-6.8L.6 3A1.4 1.4 0 0 0 0 4.2v1.2a18 18 0 0 0 18 18h1.2a1.4 1.4 0 0 0 1.1-.7ZM18 21.6C9 21.6 1.8 14.3 1.8 5.4v-1l3-1.5 3.5 4.6L6.4 10v.3A6.6 6.6 0 0 0 13 17h.3l2.6-2 4.6 3.5-1.6 3.2h-1Z" />
+      <div class="container">
+        <div class="header__row">
+         <a href="/">
+           <img class="header__logo logo" src="/assets/img/logo.png" alt="Эмблема Ступинского Филиала МАИ" />
+          </a>
+           <nav class="nav">
+              <ul class="nav__menu menu list-reset">
+               <li class="submenu__item">
+                 <a class="submenu__link" href="#">Контакты</a>
+               </li>
+               <li class="submenu__item">
+                  <a class="submenu__link" href="#">Списки поступающих</a>
+                </li>
+             </ul>
+           </nav>
+           <div>
+            <a href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.364 20H15.3345C11.2919 19.9005 7.43405 18.2863 4.52518 15.4772C1.715 12.5709 0.0998854 8.71455 0.000116569 4.67309C-0.00583661 4.10694 0.21645 3.56223 0.616892 3.16197L3.47286 0.308102C3.88379 -0.102701 4.54991 -0.102701 4.96083 0.308102L9.17008 4.51735C9.58088 4.92827 9.58088 5.59439 9.17008 6.00531L7.49059 7.68165C7.80208 8.84542 8.37587 9.92243 9.16797 10.8302C10.0741 11.6225 11.1497 12.1967 12.3123 12.5086L13.996 10.8312C14.4069 10.4204 15.073 10.4204 15.4839 10.8312L19.6932 15.0405C20.104 15.4514 20.104 16.1175 19.6932 16.5284L16.8372 19.3833C16.4478 19.7768 15.9176 19.9988 15.364 20ZM4.21474 2.54111H4.20948L2.10486 4.64994C2.19067 8.1422 3.58475 11.4749 6.01104 13.9881C8.52441 16.4136 11.8565 17.8075 15.3482 17.8943L17.4602 15.7844L14.7326 13.0642L13.372 14.4238C13.1773 14.6206 12.9122 14.7316 12.6353 14.7321C12.5614 14.7322 12.4877 14.7244 12.4154 14.709C10.6619 14.3211 9.03368 13.4994 7.68 12.3192C6.49979 10.9655 5.6781 9.33732 5.29021 7.58378C5.21703 7.23522 5.32513 6.8733 5.57749 6.62197L6.93707 5.26133L4.21474 2.54111Z" fill="white"/>
                 </svg>
-              </a>
-              <a class="tel__number" href="tel:+77000011888">+7 700 001 18 88</a>
+             </a>
+             <a href="tel:+74966411630">+7 (496) 641-16-30</a>
             </div>
-          </div>
-          <nav class="nav">
-            <ul class="nav__menu menu list-reset">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#about-project">О проекте</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#location">Локация</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#benefits">Преимущества</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#reasons">Почему мы?</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#payment">Способы оплаты</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="btn__links" type="button" id="call-request">
-            <span class="btn-line"></span>
-            <span class="btn-line"></span>
-            <span class="btn-line"></span>
-          </button>
-        </div>
+           <button class="btn__links" type="button" id="call-request">
+             <span class="btn-line"></span>
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+           </button>
       </div>
+    </div>
     </header>
 
-    <div class="first-section__container">
-      <div class="left-content">
-        <h1 class="h1">Элитный коттеджный городок в г. Нур-Султан</h1>
-        <a class="btn" href="#presentation">Скачать презентацию</a>
-        <div class="left-content__information">
-          <h3 class="f-s__h3">36 коттеджей</h3>
-          <div class="left__row-text">
-            <strong class="big-number">3</strong>
-            <p class="left-content__text">
-              коттеджа <br />
-              368 м<sup>2</sup> <br />
-              на 10 сотках
-            </p>
-            <strong class="big-number">33</strong>
-            <p class="left-content__text">
-              коттеджа <br />
-              179 м<sup>2</sup> <br />
-              на 5 сотках
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="right-content">
-        <p class="right-content__text">
-          <strong class="right-content__fat">Строительные работы</strong> начались в сентябре 2021 года.
-        </p>
-        <p class="right-content__text">
-          <strong class="right-content__fat">Срок сдачи</strong> коттеджей - I квартал 2022 года.
-        </p>
-        <p class="right-content__text">
-          <strong class="right-content__fat">Срок сдачи</strong> всего коттеджнего городка - II квартал 2022 года.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <main>
-    <section class="about-project__section" id="about-project">
-      <!-- about-project = a-p -->
-      <div class="a-p__container">
-        <div class="a-p__left-content">
-          <h2 class="a-p__h2 h2">О проекте</h2>
-          <p class="a-p__text text">
-            Элитный закрытый коттеджный городок в г. Нур-Султан, состоящий из:
-          </p>
-          <article class="a-p__description">
-            <h3 class="a-p__first-h3 a-p__h3 h3">36 коттеджей:</h3>
-            <ul class="a-p__menu">
-              <li class="a-p__text text">
-                368 м<sup>2</sup> на 10 сотках
-              </li>
-              <li class="a-p__text text">
-                179 м<sup>2</sup> на 5 сотках
-              </li>
-            </ul>
-          </article>
-          <article class="a-p__description">
-            <h3 class="a-p__company-mission-h3 a-p__h3 h3">О компании</h3>
-            <p class="a-p__text text">
-              “MM Group” Группа Строительных Компании – современная и
-              динамично развивающаяся группа компаний, оказывающая
-              широкий спектр услуг в строительном бизнесе от
-              проектирования до сдачи объектов под ключ. Свою деятельность
-              в строительном бизнесе начала осуществлять с 2013 года и
-              прочно зарекомендовала себя надежной Казахстанской
-              строительной компанией не только на территории Республики
-              Казахстан, но и за рубежом. Учредителем и генеральным
-              директором группы строительных компаний «MM Group»
-              является - Мольдир Суюншали.
-            </p>
-          </article>
-          <article class="a-p__description">
-            <h3 class="a-p__company-mission-h3 a-p__h3 h3">Миссия</h3>
-            <p class="a-p__bottom-text text">
-              Приоритетом группы строительных компаний «MM Group» является
-              профессиональный подход с применением инновационных
-              решении в строительстве воздвигаемых объектов, опытный
-              коллектив, качественные материалы и своевременность сдачи
-              объектов с доступной возможностью приобретения не только
-              жилья, но и других объектов недвижимости.
-            </p>
-          </article>
-        </div>
-        <div class="a-p__right-content">
-          <figure class="a-p__images">
-            <picture>
-              <source srcset="/assets/img/about-project/Rectangle34.avif" type="image/avif">
-              <source srcset="/assets/img/about-project/Rectangle34.webp" type="image/webp">
-              <img class="rec__34 a-p__image" src="/assets/img/about-project/Rectangle34.jpg"
-                alt="Логотип строительной компании MM Group" />
-            </picture>
-            <div class="a-p__red-rec a-p__image"></div>
-            <img class="points a-p__image" src="/assets/img/about-project/points.png" alt="Дизайн сайта" />
-          </figure>
-          <article class="a-p__description a-p__purpose">
-            <h3 class="a-p__purpose-h3 a-p__h3 h3">Цель</h3>
-            <p class="a-p__text text">
-              Укрепление статуса компании, которая способна обеспечить потребителя доступной и качественной
-              недвижимостью в срок. Развитие, надежность и качество!
-            </p>
-          </article>
-        </div>
-        <p class="a-p__bg">О проекте</p>
-      </div>
+    <section class="" id="">
+    </section>
+    <section class="" id="">
+
+    </section>
+    <section class="" id="">
+
+    </section>
+    <section class="" id="">
+
+    </section>
+    <section class="" id="">
+
+    </section>
+    <section class="" id="">
+
     </section>
 
-    <section class="cottages__section">
-      <div class="cottages container">
-        <h2 class="cottages__h2 h2">Коттеджи</h2>
-        <div class="cottages__content">
-          <a class="left-arrow" href="#">
-            <svg class="cottages__arrows" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-              fill="none">
-              <circle cx="25" cy="25" r="25" fill="#842231" />
-              <g clip-path="url(#a)">
-                <path fill="#FFC107"
-                  d="m23 33-7.4-7.5h20a.5.5 0 0 0 0-1h-20l7.4-7.4a.5.5 0 0 0-.6-.7L14 24.7a.5.5 0 0 0 0 .6l8.3 8.3a.5.5 0 0 0 .6-.7Z" />
-                <path fill="#fff" d="m14 25 .1-.3 8.3-8.3a.5.5 0 0 1 .6.7L15.1 25l8 8a.5.5 0 0 1-.7.6L14 25.3 14 25Z" />
-                <path fill="#fff" d="M14 25c0-.3.2-.5.5-.5h21a.5.5 0 0 1 0 1h-21a.5.5 0 0 1-.5-.5Z" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M36 14v22H14V14z" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-          <figure class="cottage__images">
-            <picture class="cottages__relative-picture">
-              <source srcset="/assets/img/cottages/Rectangle6.avif" type="image/avif">
-              <source srcset="/assets/img/cottages/Rectangle6.webp" type="image/webp">
-              <img class="rec__6" src="assets/img/cottages/Rectangle6.jpg" alt="Изображение коттеджа" />
-            </picture>
-            <img class="cottages__points cottage__image" src="assets/img/cottages/points.png"
-              alt="Изображение внутренней планировки здания" />
-          </figure>
-          <div class="cottages__square">
-            <p class="cottages__figure-text">179 м<sup>2</sup></p>
-            <figure>
-              <img class="rec__7 cottage__image" src="assets/img/cottages/Rectangle7.png"
-                alt="Внутренняя планировка здания" />
-            </figure>
-          </div>
-          <a class="right-arrow" href="#">
-            <svg class="cottages__arrows" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
-              fill="none">
-              <circle cx="25" cy="25" r="25" fill="#842231" />
-              <g clip-path="url(#a)">
-                <path fill="#FFC107"
-                  d="m27 17 7.4 7.5h-20a.5.5 0 0 0 0 1h20L27 32.9a.5.5 0 0 0 .6.7l8.3-8.3v-.6l-8.3-8.3a.5.5 0 0 0-.6.7Z" />
-                <path fill="#fff" d="m36 25-.1.3-8.3 8.3a.5.5 0 0 1-.6-.7l7.9-7.9-8-8a.5.5 0 0 1 .7-.6l8.3 8.3.1.3Z" />
-                <path fill="#fff" d="M36 25c0 .3-.2.5-.5.5h-21a.5.5 0 0 1 0-1h21c.3 0 .5.2.5.5Z" />
-              </g>
-              <defs>
-                <clipPath id="ab">
-                  <path fill="#fff" d="M14 36V14h22v22z" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="location__section" id="location">
-      <div class="location__container">
-        <article class="location__content">
-          <h2 class="location__h2 h2">Локация</h2>
-          <p class="location__text text">
-            Закрытый коттеджный городок Nura Elite расположен в элитном и перспективном районе столицы, рядом с зелёным
-            поясом по соседству с Vella Village.
-          </p>
-          <p class="location__text text">
-            Nura Elite - это прекрасное пространство для уединения и активной семейной жизни в гармонии с природой, без
-            городского шума с удобной транспортной развязкой.
-          </p>
-        </article>
-        <figure class="location__images">
-          <img class="location__points location__image" src="/assets/img/location/points.png" alt="Дизайн сайта" />
-          <div class="location__red-rec location__image"></div>
-          <picture>
-            <source srcset="/assets/img/location/Rectangle3.avif" type="image/avif">
-            <source srcset="/assets/img/location/Rectangle3.webp" type="image/webp">
-            <img class="rec__3 location__image" src="/assets/img/location/Rectangle3.jpg"
-              alt="Изображение месторасположения коттеджного городка" />
-          </picture>
-        </figure>
-        <p class="location__bg">ЛОКАЦИЯ</p>
-      </div>
-    </section>
-
-    <section class="benefits__section" id="benefits">
-      <div class="ben container">
-        <div class="benefits__background">
-          <img class="symbol" src="/assets/img/benefits/symbol3.png" alt="Логотип компании NURA ELITE">
-        </div>
-        <div class="front-content">
-          <h2 class="benefits__h2 h2">
-            Основные преимущества <br> городка
-          </h2>
-          <div class="benefits">
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/clarity_map-line.png" alt="Изображение карты">
-              <p class="first-icon__text benefits__text text">
-                Выгодное месторасположение
-              </p>
-            </div>
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/Rectangle32.png" alt="Изображение щита с галочкой">
-              <p class="second-icon__text benefits__text text">
-                Охраняемая территория
-              </p>
-            </div>
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/Rectangle29.png" alt="Изображение забора" />
-              <p class="third-icon__text benefits__text text">
-                Городок по периметру огражден 3-метровым забором, оснащен системой видеонаблюдения 24/7
-              </p>
-            </div>
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/Rectangle31.png" alt="Изображение кресла" />
-              <p class="fourth-icon__text benefits__text text">
-                Здесь вы почувствуете уединенность, безопасность и комфорт
-              </p>
-            </div>
-          </div>
-          <figure class="benefits__figure">
-            <picture>
-              <source srcset="/assets/img/benefits/Rectangle8.avif" type="image/avif">
-              <source srcset="/assets/img/benefits/Rectangle8.webp" type="image/webp">
-              <img class="benefits__picture" src="/assets/img/benefits/Rectangle8.jpg"
-                alt="Изображение въезда в поселок" />
-            </picture>
-          </figure>
-          <div class="benefits">
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/Rectangle26.png" alt="Изображение дома" />
-              <p class="fifth-icon__text benefits__text text">
-                Индивидуальные участки ограждены 2-метровыми заборами
-              </p>
-            </div>
-            <div class="benefits__icon-text">
-              <img class="icon" src="/assets/img/benefits/Rectangle28.png" alt="Изображение телефона" />
-              <p class="sixth-icon__text benefits__text text">
-                Собственное приложение
-              </p>
-            </div>
-          </div>
-          <div class="benefits__icon-text last-benefit">
-            <img class="icon" src="/assets/img/benefits/Rectangle27.png" alt="Изображение кирпичной стены" />
-            <p class="benefits__text text">
-              Каждому владельцу коттеджа даётся возможность на своем земельном
-              участке возводить дополнительные застройки: баню, сауну, летнюю кухню и др.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reasons__section" id="reasons">
-      <div class="reasons container">
-        <h2 class="reasons__h2 h2">Почему NURA ELITE?</h2>
-        <div class="reasons__content">
-          <figure>
-            <picture>
-              <source srcset="/assets/img/reasons/Rectangle9.avif" type="image/avif">
-              <source srcset="/assets/img/reasons/Rectangle9.webp" type="image/webp">
-              <img class="rec__9 reasons__image" src="assets/img/reasons/Rectangle9.jpg" alt="Изображение коттеджа" />
-            </picture>
-            <div class="reasons__red-rec reasons__image"></div>
-            <img class="reasons__points reasons__image" src="assets/img/reasons/points.png" alt="Дизайн сайта" />
-          </figure>
-          <div class="reasons__right-content">
-            <article class="reasons__icon-text">
-              <img class="icon" src="/assets/img/reasons/Rectangle21.png" alt="Изображение молнии" />
-              <div>
-                <h3 class="reasons__h3 h3">Энергоэффектиновсть</h3>
-                <p class="reasons__text">
-                  Дома сохраняют тепло зимой и прохладу летом
-                </p>
-              </div>
-            </article>
-            <article class="reasons__icon-text">
-              <img class="icon" src="/assets/img/reasons/Rectangle23.png" alt="Изображение ростка над руками" />
-              <div>
-                <h3 class="reasons__h3 h3">Экологически чистый район</h3>
-                <p class="reasons__text">
-                  Городок расположен рядом с лесополосой и к. Нура-Есиль
-                </p>
-              </div>
-            </article>
-            <article class="reasons__icon-text">
-              <img class="icon" src="/assets/img/reasons/Rectangle22.png" alt="Изображение щита с галочкой" />
-              <div>
-                <h3 class="reasons__h3 h3">Безопасность</h3>
-                <p class="reasons__text">
-                  Закрытый городок с круглосуточным видеонаблюдением
-                </p>
-              </div>
-            </article>
-            <article class="reasons__icon-text">
-              <img class="icon" src="/assets/img/reasons/Rectangle25.png" alt="Изображение капли" />
-              <div>
-                <h3 class="reasons__h3 h3">Коммуникации</h3>
-                <p class="reasons__text">
-                  Централизованное водоснабжение, энергоснабжение и канализация.<br><br>Отопительная система и горячая
-                  вода - это один общий газгольдер на весь городок, функционирующий за счет газа.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <p class="reasons__bg">ПОЧЕМУ NURA</p>
-      </div>
-    </section>
-
-    <section class="technology__section" id="technology">
-      <div class="technology container">
-        <h2 class="technology__h2 h2">Технология строения</h2>
-        <div class="technology__content">
-          <div class="techonology__left-column technology__columns">
-            <ul class="list-reset">
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle11.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle11.webp" type="image/webp">
-                    <img class="left-image-1" src="/assets/img/technology/Rectangle11.jpg"
-                      alt="Изображение конструкции стены" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">Конструкция стены</h3>
-                <p class="technology__text">
-                  Двойная кладка из жжённого красного кирпича - 38/40 см,
-                  утепление минеральной плитой - 10 см., и облицовка HPL и ФБЦ
-                  панелью
-                </p>
-              </li>
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle13.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle13.webp" type="image/webp">
-                    <img class="left-image-2" src="/assets/img/technology/Rectangle13.jpg"
-                      alt="Изображение конструкции двери" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">Конструкция двери</h3>
-                <p class="technology__text">
-                  Технология IZO TERMO. Двери не соприкасаются с наружными.
-                  Между ними расположен изолятор - щит из португальского
-                  пробкового дуба толщиной в 8 мм. IZO TERMO устраняет “мостик
-                  холода” и не дает теплу уходить из дома. С этой технологией
-                  вам не нужен тамбур и вторая дверь.
-                </p>
-              </li>
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle15.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle15.webp" type="image/webp">
-                    <img class="left-image-3" src="/assets/img/technology/Rectangle15.jpg"
-                      alt="Изображение конструкции фасада" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">Конструкция Фасада</h3>
-                <p class="technology__text">
-                  HPL панель - это высококачественная строительная продукция
-                  для долговечной облицовки фасада. Стойкость на погодные
-                  воздействия +180 с/ -180с с высоким эффектом защиты от
-                  атмосферных воздействий. Данная защита обеспечивается за
-                  счет применения акрилополиуретановых смол с двойным
-                  отверждением. Относится к экологичным материалам.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="techonology__right-column technology__columns">
-            <ul class="list-reset">
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle12.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle12.webp" type="image/webp">
-                    <img class="right-image-1" src="/assets/img/technology/Rectangle12.jpg"
-                      alt="Изображение конструкции окна" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">Конструкция окна</h3>
-                <p class="technology__text">
-                  Высокая экологичность, безопасность, надёжность
-                  и долговечность, усиленная теплоизолирующая способность,
-                  которая обеспечивается пятикамерным строением профиля с
-                  тройным остеклением и шумоизоляцией (система Helios
-                  рассчитана на стеклопакеты толщиной 44 мм с воздушной
-                  прослойкой в 16 мм, проходя через которые низкочастотные
-                  шумы теряют свою интенсивность, что очень ценят жители)
-                  по технологии FUNKE
-                </p>
-              </li>
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle14.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle14.webp" type="image/webp">
-                    <img class="right-image-2" src="/assets/img/technology/Rectangle14.jpg"
-                      alt="Изображение конструкции кровли" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">Конструкция кровли</h3>
-                <p class="technology__text">
-                  Гибкая черепица ТЕХНОНИКОЛЬ SHINGLAS - это гарантия комфорта
-                  и безопасности вашего дома. Дома с кровлей из гибкой
-                  черепицы ТЕХНОНИКОЛЬ SHINGLAS очаровывают своей гармонией,
-                  изяществом. Коллекции отличаются разнообразием форм и
-                  расцветок.
-                </p>
-              </li>
-              <li class="technology__list-items">
-                <figure>
-                  <picture>
-                    <source srcset="/assets/img/technology/Rectangle16.avif" type="image/avif">
-                    <source srcset="/assets/img/technology/Rectangle16.webp" type="image/webp">
-                    <img class="right-image-3" src="/assets/img/technology/Rectangle16.jpg"
-                      alt="Изображение материала для облицовки фасада" />
-                  </picture>
-                </figure>
-                <h3 class="technology__h3 h3">ФБЦ</h3>
-                <p class="technology__text">
-                  ФБЦ - это уникальный и высококачественный строительный
-                  материал для долговечной облицовки фасада. Высокая
-                  морозостойкость, пожаробезопасность, хорошая звуко- и
-                  теплоизоляция, герметичность, повышенная прочность,
-                  погодоустойчивость. Безопасна как для человека, так и для
-                  окружающей среды. Они не содержат асбест, состоят из
-                  экологически чистых натуральных компонентов: 82-85% цемента,
-                  древесное волокно, добавки для снижения веса,
-                  кремнийорганические соединения
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p class="technology__bg">Технология</p>
-      </div>
-    </section>
-
-    <div class="presentation__container" id="presentation">
-      <div class="presentation__name">
-        <h2 class="presentation__h2 h2">Скачать презентацию</h2>
-        <p class="presentation__text">
-          Оставьте свои контакты и мы вам вышлем
-        </p>
-      </div>
-      <form class="presentation__buttons">
-        <fieldset class="form-group">
-          <legend class="form-legend">Ваше имя</legend>
-          <input class="form-image-user" type="image" src="/assets/img/presentation/user.svg" alt="Иконка пользователя">
-          <input class="form-input" type="text" placeholder="Ваше имя" />
-        </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-legend">Номер телефона</legend>
-          <input class="form-image-phone" type="image" src="/assets/img/presentation/Phone.svg" alt="Иконка телефона">
-          <input class="form-input" type="tel" placeholder="Номер телефона" />
-        </fieldset>
-        <button class="presentation__button-send" type="submit">Отправить</button>
-      </form>
-    </div>
-
-    <div class="payment__container" id="payment">
-      <h2 class="payment__h2 h2">Способы оплаты</h2>
-      <ul class="payment__menu list-reset">
-        <li class="payment__submenu">
-          <img class="payment__image-1" src="/assets/img/payment/image2.png" alt="Логотип компании ЖилСтройСберБанк" />
-          <p class="payment__text">Получение займа через АО "ЖилСтройСберБанк"</p>
-        </li>
-        <li class="payment__submenu">
-          <img class="payment__image-2" src="/assets/img/payment/0.png" alt="Изображение 0%">
-          <p class="payment__text">Получение беспроцентной рассрочки от застройщика NURA ELITE</p>
-        </li>
-        <li class="payment__submenu">
-          <img class="payment__image-3" src="/assets/img/payment/image4.png" alt="Логотип компании Орда" />
-          <p class="payment__text">Казахстанская Ипотечная Компания «Орда»</p>
-        </li>
-        <li class="payment__submenu">
-          <img class="payment__image-4" src="/assets/img/payment/logos_bitcoin.png" alt="Изображение биткоина" />
-          <p class="payment__text">Оплата криптовалютой (Биткоин)</p>
-        </li>
-      </ul>
-      <p class="payment__bg">Оплата</p>
-    </div>
-
-    <div class="contacts__container" id="contacts">
-      <figure>
-        <picture>
-          <source srcset="/assets/img/contacts/Rectangle20.avif" type="image/avif">
-          <source srcset="/assets/img/contacts/Rectangle20.webp" type="image/webp">
-          <img class="contacts__image" src="/assets/img/contacts/Rectangle20.jpg"
-            alt="Изображение месторасположения контактного адреса" />
-        </picture>
-      </figure>
-      <article class="contacts__information">
-        <h2 class="contacts__h2 h2">Контакты</h2>
-        <address class="contacts__address">
-          ул. Кунаева 10, БЦ “Изумрудный”, блок - А, этаж 1
-        </address>
-        <div class="contacts__connect-information">
-          <ul class="contacts__menu list-reset">
-            <li class="contacts__list">
-              <a href="tel:+77000011888">
-                <svg class="icon-link-phone icon-link" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                  viewBox="0 0 18 18" fill="none">
-                  <path fill="#333"
-                    d="m16.1 17.5 1.9-3.8-5.4-4-2.5 1.8A3.8 3.8 0 0 1 6.5 8l1.9-2.5L4.3 0 .6 1.8a1 1 0 0 0-.6 1v1A14.2 14.2 0 0 0 14.2 18h1a1 1 0 0 0 1-.5Zm-1.9-.9c-7 0-12.8-5.7-12.8-12.8V3l2.5-1.2 2.7 3.6-1.5 2v.3a5.2 5.2 0 0 0 5.2 5.2h.3l2-1.5 3.6 2.7-1.2 2.5h-.8Z" />
-                </svg>
-              </a>
-              <a class="contacts__link" href="tel:+77000011888">+7 (700) 001-18-88</a>
-            </li>
-            <li class="contacts__list">
-              <a href="mailto:info@nuramm.kz">
-                <svg class="icon-link-mail" xmlns="http://www.w3.org/2000/svg" width="18" height="14"
-                  viewBox="0 0 18 14" fill="none">
-                  <path stroke="#333" stroke-width="1.5" d="M.8 1.8 9 8l8.3-6.3M.6 1h16.6v12H.6V1Z" />
-                </svg>
-              </a>
-              <a class="contacts__link" href="mailto:info@nuramm.kz">info@nuramm.kz</a>
-            </li>
-            <li class="contacts__list">
-              <a href="#">
-                <svg class="icon-link-inst icon-link" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                  viewBox="0 0 20 20" fill="none">
-                  <path fill="#333"
-                    d="M10 5.1A5 5 0 0 0 4.9 10a5 5 0 0 0 5.1 4.9 5 5 0 0 0 5.1-4.9A5 5 0 0 0 10 5.1Zm0 8A3.3 3.3 0 0 1 6.7 10c0-1.7 1.5-3.2 3.3-3.2 1.8 0 3.3 1.5 3.3 3.2 0 1.7-1.5 3.2-3.3 3.2Zm5.3-9.3c-.6 0-1.2.5-1.2 1.1 0 .7.6 1.2 1.2 1.2.7 0 1.2-.5 1.2-1.2a1 1 0 0 0-.3-.8 1.2 1.2 0 0 0-.9-.3ZM20 10V6c-.1-1.4-.5-2.8-1.7-3.9A6.1 6.1 0 0 0 14.1.6L10 .5H5.9c-1.6.1-3 .5-4.2 1.6a5.5 5.5 0 0 0-1.6 4L0 10v4c.1 1.4.5 2.8 1.7 3.9a6.1 6.1 0 0 0 4.2 1.5l4.1.1h4.1c1.6-.1 3-.5 4.2-1.6a5.5 5.5 0 0 0 1.6-4L20 10Zm-2.2 5.6a3 3 0 0 1-.8 1c-.3.4-.6.6-1.1.8-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4L3 16.7a3 3 0 0 1-.8-1c-.5-1.3-.4-4.3-.4-5.7 0-1.4-.1-4.4.4-5.6.2-.4.4-.8.8-1 .3-.4.6-.6 1.1-.8 1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4l1.1.7c.4.3.6.7.8 1 .5 1.3.4 4.3.4 5.7 0 1.4.1 4.4-.4 5.6Z" />
-                </svg>
-              </a>
-              <a class="contacts__link" href="mailto:@nura.premier">@nura.premier</a>
-            </li>
-          </ul>
-          <figure>
-            <img class="contacts__qr" src="/assets/img/contacts/QR.png" alt="QR код" />
-          </figure>
-        </div>
-      </article>
-    </div>
   </main>
 
   <footer class="footer">
     <nav class="footer__navigation">
       <ul class="footer__menu list-reset">
-        <li>
-          <a class="footer__links" href="#benefits">Преимущества</a>
-        </li>
-        <li>
-          <a class="footer__links" href="#reasons">Почему мы?</a>
-        </li>
-        <li>
-          <a class="footer__links" href="#technology">Технологии</a>
-        </li>
-        <li>
-          <a class="footer__links" href="#payment">Способы оплаты</a>
-        </li>
+
       </ul>
     </nav>
-    <a class="final-link" href="#">Создание сайта maxico.kz</a>
   </footer>
 
   <div class="dialog" id="call-request-dialog">
@@ -642,22 +79,22 @@
       <nav class="nav-inside-btn" id="call-request-close">
         <ul class="nav__menu menu list-reset">
           <li class="submenu__item">
-            <a class="submenu__link" href="#about-project">О проекте</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" href="#location">Локация</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" href="#benefits">Преимущества</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" href="#reasons">Почему мы?</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" href="#payment">Способы оплаты</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" href="#contacts">Контакты</a>
+            <a class="submenu__link" href="#reasons"></a>
           </li>
         </ul>
       </nav>
