@@ -62,12 +62,8 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-path {
-  transition: 0.3s ease-in-out;
-}
-
-circle {
-  transition: 0.3s ease-in-out;
+p {
+  color: var(--font-color);
 }
 
 .list-reset {
@@ -113,12 +109,73 @@ h1, h2, h3, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 797px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 82px;
+}
+
+.submenu__link:hover {
+    color :var(--button-color);
 }
 
 .nav__menu {
   display: flex;
+  justify-content: space-between;
+  gap:23px;
 }
 
 .btn__links {
   display: none;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone>a:hover {
+  color: var(--button-color);
+}
+
+.sf {
+  font-size: 1.5rem;
+}
+
+.h1 {
+max-width: 470px;
+width: 100%;
+margin: 10px 0;
+}
+
+.biggest__university {
+font-size: 1.125rem;
+}
+
+.request-button {
+font-size: 0.875rem;
+color: var(--font-color);
+background-color: var(--button-color);
+margin-top: 49px;
+padding: 13px 20px;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.request-button:hover {
+  transform: scale(1.05);
+  background-color: transparent;
+  color: var(--button-color);
+  border: 2px solid var(--button-color);
+  }
+
+@media (max-width: 729.98px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: none;
+  }
 }
