@@ -60,7 +60,6 @@ figure {
 img {
   max-width: 100%;
   height: auto;
-  transition: 0.3s ease-in-out;
 }
 
 p {
@@ -83,12 +82,6 @@ h1, h2, h3, a {
 .h3 {
   font-family: 'Roboto Bold';
   font-size: 1.25rem;
-}
-
-.text {
-  font-family: 'Roboto Light';
-  font-size: 1.25rem;
-  line-height: 110%;
 }
 
 .blue-text {
@@ -196,7 +189,6 @@ font-size: 1.125rem;
   }
 
 .direction__text {
-  font-size: 1rem;
   color: var(--background-color);
   font-family: 'Roboto Regular';
   }
@@ -231,12 +223,11 @@ gap: 100px;
   .passing-text {
 color:var(--background-color);
 font-family: 'Roboto Bold';
-font-size: 1rem;
   }
 
   .min-points__title {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    margin-top: 150px;
+    margin-bottom: 40px;
   }
 
   .min-score__subject {
@@ -265,9 +256,96 @@ font-size: 1rem;
     color: var(--background-color);
   }
 
+  .why-mai__title {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+
+  .reasons__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .reasons__row>article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column ;
+    max-width: 270px;
+  }
+
+  .why-mai__img {
+    width: 110px;
+    height: 100px;
+  }
+
+  .reason__title {
+    font-family: 'Roboto Bold';
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .reason__text {
+    font-family: 'Roboto Regular';
+    text-align: center;
+  }
+
+  .subjects {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 650px;
+  }
+
+  .preparatory-courses__title {
+margin-top: 130px;
+margin-bottom: 20px;
+  }
+
+  .preparatory-courses__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .subject {
+    font-family: 'Roboto Bold';
+    font-size: 2.5rem;
+  }
+
+  .number-text__pair {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cost-hours__text {
+    font-family: 'Roboto Regular';
+    font-size: 1.75rem;
+  }
+
+  .cost-hours__numbers {
+    font-family: 'Roboto Bold';
+    font-size: 6rem;
+  }
+
   @media (max-width: 799.98px) {
     .biggest__university {
       padding-bottom: 100px;
+    }
+
+    .why-mai__title {
+margin-top: 100px;
+    }
+
+    .min-points__title {
+      margin-top: 100px;
     }
   }
 
@@ -286,6 +364,14 @@ font-size: 1rem;
 
   .header__row {
     padding-bottom: 100px;
+  }
+
+  .first-screen__section {
+    background-image: none;
+  }
+
+  .biggest__university {
+    padding-bottom: 0;
   }
 }
 
@@ -308,6 +394,14 @@ font-size: 1rem;
 
   .directions__title {
     padding-top: 40px;
+  }
+
+  .why-mai__title {
+    margin-top: 50px;
+  }
+
+  .min-points__title {
+    margin-top: 50px;
   }
 }
 
