@@ -45,6 +45,7 @@ html {
 
 body {
   font-family: 'Roboto Light', Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
 }
 
 a {
@@ -90,22 +91,29 @@ h1, h2, h3, a {
   line-height: 110%;
 }
 
+.blue-text {
+  color: var(--button-color);
+}
+
+.first-screen__section {
+  background-image: url(/assets/img/jet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   max-width: 1400px;
   width: 100%;
-  margin: -1px auto 0;
+  margin: 0 auto;
   padding: 0 50px;
-  background-color: var(--background-color);
 }
 
 .header__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 82px;
+  padding-top:50px;
+  padding-bottom: 140px;
 }
 
 .submenu__link:hover {
@@ -128,12 +136,6 @@ h1, h2, h3, a {
   color: var(--button-color);
 }
 
-.engine__background {
-  position: absolute;
-  width: 700px;
-  height: 1450px;
-}
-
 .sf {
   font-family: 'Roboto Regular';
   font-size: 1.5rem;
@@ -150,25 +152,13 @@ font-size: 3.5rem;
 .biggest__university {
   font-family: 'Roboto Regular';
 font-size: 1.125rem;
+padding-bottom: 300px;
 }
 
-.request-button {
-font-size: 0.875rem;
-color: var(--font-color);
-background-color: var(--button-color);
-margin-top: 49px;
-margin-bottom: 50px;
-padding: 13px 20px;
-transition: 0.5s ease-in-out;
-cursor: pointer;
+.directions__title {
+  padding-top: 95px;
+  padding-bottom: 60px;
 }
-
-.request-button:hover {
-  transform: scale(1.05);
-  background-color: transparent;
-  color: var(--button-color);
-  border: 2px solid var(--button-color);
-  }
 
 .direction-of-preparation {
     display: flex;
@@ -202,8 +192,7 @@ cursor: pointer;
 
 .direction__title {
 color: var(--background-color);
-font-size: 1rem;
-font-family: 'Roboto Bold';
+font-size: 1.125rem;
   }
 
 .direction__text {
@@ -246,14 +235,11 @@ font-size: 1rem;
   }
 
   .min-points__title {
-    font-family: 'Roboto Bold';
-    font-size: 2.25rem;
     padding-top: 50px;
     padding-bottom: 40px;
   }
 
   .min-score__subject {
-    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -279,7 +265,13 @@ font-size: 1rem;
     color: var(--background-color);
   }
 
-@media (max-width: 729.98px) {
+  @media (max-width: 799.98px) {
+    .biggest__university {
+      padding-bottom: 100px;
+    }
+  }
+
+@media (max-width: 599.98px) {
   .container {
     padding: 0 20px;
   }
@@ -291,6 +283,10 @@ font-size: 1rem;
   .passing-score__container {
     gap: 20px;
     }
+
+  .header__row {
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 499.98px) {
@@ -298,13 +294,29 @@ font-size: 1rem;
     padding-bottom: 40px;
   }
 
+  .header__logo {
+    transform: scale(0.7);
+  }
+
   .h1 {
     font-size: 3rem;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+  }
+
+  .directions__title {
+    padding-top: 40px;
   }
 }
 
 @media (max-width: 399.98px) {
   .h1 {
     font-size: 2rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
   }
 }
