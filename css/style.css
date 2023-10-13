@@ -341,6 +341,7 @@ margin-bottom: 20px;
     justify-content: center;
     gap: 60px;
     margin-top: 130px;
+    margin-bottom: 85px;
   }
 
   .acceptance-documents__information {
@@ -358,6 +359,124 @@ margin-bottom: 20px;
     text-align: end;
     max-width: 610px;
     margin: 45px 0;
+  }
+
+  .open-day__section {
+    background-image: url(/assets/img/plane.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .open-day__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 200px 0;
+  }
+
+  .open-day__title {
+    text-align: end;
+    font-size: 4rem;
+  }
+
+  .open-day__text {
+    max-width: 760px;
+    text-align: end;
+    font-family: 'Roboto Bold';
+    font-size: 3rem;
+    margin: 100px 0;
+  }
+
+  .open-day__button {
+    font-family: 'Roboto Regular';
+    background-color: var(--button-color);
+    color: var(--font-color);
+    padding: 25px 100px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .open-day__button:hover {
+    background-color: transparent;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+  }
+
+  .active-life__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active-life__title {
+    text-align: center;
+    margin: 110px 0;
+  }
+
+  .active-life__spheres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .active-life__sphere1>img {
+    border-radius: 0 0 40px 0 ;
+    box-shadow: -30px -30px 100px var(--button-color);
+  }
+
+  .active-life__sphere2>img {
+    border-radius: 0 0 0 40px ;
+    box-shadow: 30px -30px 100px var(--button-color);
+  }
+
+  .active-life__sphere3>img {
+    border-radius: 0 40px 0 0 ;
+    box-shadow: -30px 30px 100px var(--button-color);
+  }
+
+  .active-life__sphere4>img {
+    border-radius: 40px 0 0 0 ;
+    box-shadow: 30px 30px 100px var(--button-color);
+  }
+
+  .sphere {
+    position: relative;
+  }
+
+  .sphere>h3 {
+    position: relative;
+    font-family: 'Roboto Regular';
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -80px;
+  }
+
+  @media (max-width:949.98px) {
+    .active-life__spheres {
+      grid-template-rows: repeat(4,1fr);
+      grid-template-columns: 1fr;
+    }
+
+    .active-life__sphere1>img {
+      border-radius: 0 ;
+      box-shadow: 0 0 100px var(--button-color);
+    }
+
+    .active-life__sphere2>img {
+      border-radius:  0 ;
+      box-shadow: 0 0 100px var(--button-color);
+    }
+
+    .active-life__sphere3>img {
+      border-radius: 0 ;
+      box-shadow: 0 0 100px var(--button-color);
+    }
+
+    .active-life__sphere4>img {
+      border-radius: 0 ;
+      box-shadow: 0 0 100px var(--button-color);
+    }
   }
 
   @media (max-width: 799.98px) {
@@ -417,6 +536,18 @@ margin-top: 100px;
 
 .acceptance-documents__content {
   margin-top: 50px;
+}
+
+.open-day__section {
+  background-image: none;
+}
+
+.open-day__content {
+  padding: 0;
+}
+
+.sphere>h3 {
+  font-size: 2.5rem;
 }
 }
 
@@ -479,6 +610,23 @@ margin-top: 100px;
   .acceptance-documents__text {
     margin: 20px 0;
 }
+
+.open-day__text {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.open-day__button {
+  padding: 15px 70px;
+}
+
+.active-life__title {
+  margin: 50px 0;
+}
+
+.sphere>h3 {
+  font-size: 2rem;
+}
 }
 
 @media (max-width: 399.98px) {
@@ -501,4 +649,22 @@ margin-top: 100px;
   .cost-hours__numbers {
     font-size: 2rem;
   }
+
+  .open-day__text {
+    font-size: 1.25rem;
+  }
+
+  .acceptance-documents__content {
+    margin-bottom: 50px;
+}
+
+.open-day__button {
+  font-size: 0.7rem;
+  padding: 10px 50px;
+}
+
+.sphere>h3 {
+  margin-top: -50px;
+  font-size: 1.5rem;
+}
 }
