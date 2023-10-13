@@ -335,6 +335,31 @@ margin-bottom: 20px;
     font-size: 6rem;
   }
 
+  .acceptance-documents__content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 130px;
+  }
+
+  .acceptance-documents__information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .acceptance-documents__title {
+    text-align: end;
+  }
+
+  .acceptance-documents__text {
+    font-family: 'Roboto Regular';
+    font-size: 1.5rem;
+    text-align: end;
+    max-width: 610px;
+    margin: 45px 0;
+  }
+
   @media (max-width: 799.98px) {
     .biggest__university {
       padding-bottom: 100px;
@@ -373,6 +398,26 @@ margin-top: 100px;
   .biggest__university {
     padding-bottom: 0;
   }
+
+  .subject {
+    font-size: 2rem;
+  }
+
+  .cost-hours__numbers {
+    font-size: 5rem;
+  }
+
+  .cost-hours__text {
+    font-size: 1.25rem;
+  }
+
+  .preparatory-courses__title {
+    margin-top: 50px;
+}
+
+.acceptance-documents__content {
+  margin-top: 50px;
+}
 }
 
 @media (max-width: 499.98px) {
@@ -403,6 +448,37 @@ margin-top: 100px;
   .min-points__title {
     margin-top: 50px;
   }
+
+  .why-mai__img {
+    width: 55px;
+    height: 50px;
+  }
+
+  .reason__title {
+    font-size: 1.25rem;
+}
+
+  .subjects {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    max-width: 650px;
+  }
+
+  .subject {
+    font-size: 1.5rem;
+  }
+
+  .cost-hours__numbers {
+    font-size: 3rem;
+  }
+
+  .acceptance-documents__content {
+    gap: 20px;
+}
+
+  .acceptance-documents__text {
+    margin: 20px 0;
+}
 }
 
 @media (max-width: 399.98px) {
@@ -412,5 +488,17 @@ margin-top: 100px;
 
   .h2 {
     font-size: 1.5rem;
+  }
+
+  .acceptance-documents__text {
+    font-size: 1rem;
+  }
+
+  .subject {
+    font-size: 1.25rem;
+  }
+
+  .cost-hours__numbers {
+    font-size: 2rem;
   }
 }
