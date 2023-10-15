@@ -456,6 +456,10 @@ margin-bottom: 20px;
     margin-top: -80px;
   }
 
+  .admission-stages__section {
+    padding-bottom: 260px;
+  }
+
   .admission-stages__content {
     display: flex;
     flex-direction: column;
@@ -522,10 +526,6 @@ margin-bottom: 20px;
     background-color: var(--font-color);
   }
 
-  .first-sircle {
-    background-color: var(--button-color);
-  }
-
   .stage-circle>svg {
     margin-top: 45px;
     margin-left: 50px;
@@ -549,7 +549,6 @@ margin-bottom: 20px;
   }
 
   .questions-answers__title {
-    margin-top: 260px;
     margin-bottom: 110px;
   }
 
@@ -674,9 +673,8 @@ margin-bottom: 20px;
       box-shadow: 0 0 100px var(--button-color);
     }
 
-    .admission-stages__title {
+    .active-life__section {
       margin-top: 150px;
-      margin-bottom: 100px;
   }
   }
 
@@ -708,10 +706,9 @@ margin-bottom: 20px;
       }
     }
 
-    .questions-answers__title {
-      margin-top: 150px;
-      margin-bottom: 100px;
-  }
+    .admission-stages__section {
+      padding-bottom: 150px;
+    }
 
     .line {
       display: none;
@@ -865,8 +862,11 @@ margin-bottom: 20px;
   font-size: 2rem;
 }
 
+.active-life__section {
+  margin-bottom: 100px;
+}
+
 .admission-stages__title {
-  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -884,8 +884,8 @@ margin-bottom: 20px;
   gap: 50px;
 }
 
-.questions-answers__title {
-  margin-top: 100px;
+.admission-stages__section {
+  padding-bottom: 100px;
 }
 }
 
@@ -936,8 +936,11 @@ margin-bottom: 20px;
   gap: 20px;
 }
 
+.active-life__section {
+  margin-bottom: 70px;
+}
+
 .admission-stages__title {
-  margin-top: 70px;
   margin-bottom: 20px;
 }
 
@@ -971,8 +974,11 @@ margin-bottom: 20px;
     margin-left: 10px;
   }
 
+  .admission-stages__section {
+    padding-bottom: 50px;
+  }
+
   .questions-answers__title {
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 
