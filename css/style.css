@@ -402,6 +402,10 @@ margin-bottom: 20px;
     border: 1px solid var(--button-color);
   }
 
+  .active-life__section {
+    margin-bottom: 270px;
+  }
+
   .active-life__content {
     display: flex;
     flex-direction: column;
@@ -467,7 +471,6 @@ margin-bottom: 20px;
   }
 
   .admission-stages__title {
-    margin-top: 270px;
     margin-bottom: 100px;
   }
 
