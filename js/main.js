@@ -1,14 +1,24 @@
-document.getElementById('first').style.display = 'none';
-document.getElementById('second').style.display = 'none';
-document.getElementById('third').style.display = 'none';
-document.getElementById('fourth').style.display = 'none';
-document.getElementById('fifth').style.display = 'none';
-
+document.querySelector('#dsection').onmouseover = function(e) {
+  var targetID = e.target.id;
+  var psID = targetID.replace('d', 'ps');
+function makeVisible(event) {
+  if (event.type == "mouseenter") {
+    document.getElementById(psID).style.display = 'flex';
+  }
+  else if (event.type == "mouseleave") {
+    document.getElementById(psID).style.display = 'none';
+  }
+}
+var id = document.getElementById(targetID);
+if (id !== null) {
+  id.addEventListener("mouseenter", makeVisible);
+  id.addEventListener("mouseleave", makeVisible);
+}
+}
 
 var sum=0;
 
 document.getElementById('section').onwheel = function (event) {
-
   var line = event.deltaY;
   sum = sum +line*0.1;
   if (sum > 50) {
@@ -41,4 +51,10 @@ document.getElementById('section').onwheel = function (event) {
   }
   return false;
 }
+
+
+
+
+
+
 

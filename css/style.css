@@ -193,6 +193,10 @@ font-size: 1.125rem;
   font-family: 'Roboto Regular';
   }
 
+  #psfirst, #pssecond, #psthird, #psfourth, #psfifth {
+    display: none;
+  }
+
 .passing-score__container {
 display: flex;
 flex-wrap: wrap;
@@ -458,6 +462,10 @@ margin-bottom: 20px;
 
   .admission-stages__section {
     padding-bottom: 260px;
+  }
+
+  #first, #second, #third, #fourth, #fifth {
+    display: none;
   }
 
   .admission-stages__content {
