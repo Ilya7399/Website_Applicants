@@ -193,16 +193,16 @@ font-size: 1.125rem;
   font-family: 'Roboto Regular';
   }
 
-  #psfirst, #pssecond, #psthird, #psfourth, #psfifth {
-    display: none;
-  }
-
 .passing-score__container {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 margin-top: 40px;
 gap: 100px;
+}
+
+#psfirst, #pssecond, #psthird, #psfourth, #psfifth {
+  display: none;
 }
 
 .passing-score__article {
@@ -213,6 +213,7 @@ gap: 100px;
   max-width: 130px;
   width: 100%;
   min-height: 90px;
+  margin-bottom: 20px;
   border: 2px solid var(--button-color);
   border-radius: 20px;
   background-color: var(--font-color);
@@ -230,7 +231,6 @@ font-family: 'Roboto Bold';
   }
 
   .min-points__title {
-    margin-top: 150px;
     margin-bottom: 40px;
   }
 
@@ -239,6 +239,10 @@ font-family: 'Roboto Bold';
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+  }
+
+  #msfirst, #mssecond, #msthird, #msfourth, #msfifth {
+    display: none;
   }
 
   .min-score__article {
@@ -695,10 +699,6 @@ margin-bottom: 20px;
       margin-top: 100px;
     }
 
-    .min-points__title {
-      margin-top: 100px;
-    }
-
     .admission-stage:nth-child(2n), .admission-stage:nth-child(2n-1) {
       flex-direction: column;
       .admission-stage__text-container {
@@ -818,10 +818,6 @@ margin-bottom: 20px;
     margin-top: 50px;
   }
 
-  .min-points__title {
-    margin-top: 50px;
-  }
-
   .why-mai__img {
     width: 55px;
     height: 50px;
@@ -890,10 +886,6 @@ margin-bottom: 20px;
 
 .admission-stage {
   gap: 50px;
-}
-
-.admission-stages__section {
-  padding-bottom: 100px;
 }
 }
 
@@ -980,10 +972,6 @@ margin-bottom: 20px;
     height: 50px;
     margin-top: 25px;
     margin-left: 10px;
-  }
-
-  .admission-stages__section {
-    padding-bottom: 50px;
   }
 
   .questions-answers__title {
