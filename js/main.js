@@ -1,96 +1,33 @@
-function makeVisibleFirst(event) {
-  if (event.type == "mouseover") {
-    document.getElementById('psfirst').style.display = 'flex';
-    document.getElementById('mssecond').style.display = 'flex';
-    document.getElementById('msthird').style.display = 'flex';
-    document.getElementById('msfourth').style.display = 'flex';
-    document.getElementById('msfifth').style.display = 'flex';
-  }
-  else if (event.type == "mouseout") {
-    document.getElementById('psfirst').style.display = 'none';
-    document.getElementById('mssecond').style.display = 'none';
-    document.getElementById('msthird').style.display = 'none';
-    document.getElementById('msfourth').style.display = 'none';
-    document.getElementById('msfifth').style.display = 'none';
-  }
-}
- var dfirst = document.getElementById("dfirst");
- dfirst.addEventListener("mouseover", makeVisibleFirst);
- dfirst.addEventListener("mouseout", makeVisibleFirst);
- function makeVisibleSecond(event) {
-  if (event.type == "mouseover") {
-    document.getElementById('pssecond').style.display = 'flex';
-    document.getElementById('mssecond').style.display = 'flex';
-    document.getElementById('msthird').style.display = 'flex';
-    document.getElementById('msfourth').style.display = 'flex';
-    document.getElementById('msfifth').style.display = 'flex';
-  }
-  else if (event.type == "mouseout") {
-    document.getElementById('pssecond').style.display = 'none';
-    document.getElementById('mssecond').style.display = 'none';
-    document.getElementById('msthird').style.display = 'none';
-    document.getElementById('msfourth').style.display = 'none';
-    document.getElementById('msfifth').style.display = 'none';
-  }
-}
- var dsecond = document.getElementById("dsecond");
- dsecond.addEventListener("mouseover", makeVisibleSecond);
- dsecond.addEventListener("mouseout", makeVisibleSecond);
- function makeVisibleThird(event) {
-  if (event.type == "mouseover") {
-    document.getElementById('psthird').style.display = 'flex';
-    document.getElementById('msfirst').style.display = 'flex';
-    document.getElementById('msfourth').style.display = 'flex';
-    document.getElementById('msfifth').style.display = 'flex';
-  }
-  else if (event.type == "mouseout") {
-    document.getElementById('psthird').style.display = 'none';
-    document.getElementById('msfirst').style.display = 'none';
-    document.getElementById('msfourth').style.display = 'none';
-    document.getElementById('msfifth').style.display = 'none';
-  }
-}
- var dthird = document.getElementById("dthird");
- dthird.addEventListener("mouseover", makeVisibleThird);
- dthird.addEventListener("mouseout", makeVisibleThird);
- function makeVisibleFourth(event) {
-  if (event.type == "mouseover") {
-    document.getElementById('psfourth').style.display = 'flex';
-    document.getElementById('mssecond').style.display = 'flex';
-    document.getElementById('msthird').style.display = 'flex';
-    document.getElementById('msfourth').style.display = 'flex';
-    document.getElementById('msfifth').style.display = 'flex';
-  }
-  else if (event.type == "mouseout") {
-    document.getElementById('psfourth').style.display = 'none';
-    document.getElementById('mssecond').style.display = 'none';
-    document.getElementById('msthird').style.display = 'none';
-    document.getElementById('msfourth').style.display = 'none';
-    document.getElementById('msfifth').style.display = 'none';
-  }
-}
- var dfourth = document.getElementById("dfourth");
- dfourth.addEventListener("mouseover", makeVisibleFourth);
- dfourth.addEventListener("mouseout", makeVisibleFourth);
- function makeVisibleFifth(event) {
-  if (event.type == "mouseover") {
-    document.getElementById('psfifth').style.display = 'flex';
-    document.getElementById('mssecond').style.display = 'flex';
-    document.getElementById('msthird').style.display = 'flex';
-    document.getElementById('msfourth').style.display = 'flex';
-    document.getElementById('msfifth').style.display = 'flex';
-  }
-  else if (event.type == "mouseout") {
-    document.getElementById('psfifth').style.display = 'none';
-    document.getElementById('mssecond').style.display = 'none';
-    document.getElementById('msthird').style.display = 'none';
-    document.getElementById('msfourth').style.display = 'none';
-    document.getElementById('msfifth').style.display = 'none';
-  }
-}
- var dfifth = document.getElementById("dfifth");
- dfifth.addEventListener("mouseover", makeVisibleFifth);
- dfifth.addEventListener("mouseout", makeVisibleFifth);
+const second = document.getElementById('mssecond');
+const third = document.getElementById('msthird');
+const fourth = document.getElementById('msfourth');
+const fifth = document.getElementById('msfifth');
+const mptitle = document.getElementById('mptitle');
+const elems = document.querySelectorAll('.direction-of-preparation__article').forEach(
+    article => {
+      article.onmouseenter = function (e) {
+        console.log(article.id)
+        var psId = article.id.replace('d', 'ps');
+        document.getElementById(psId).style.display = 'flex';
+        if (article.id != 'dthird') {
+          mptitle.style.display =second.style.display = third.style.display= fourth.style.display= fifth.style.display = 'flex';
+        }
+         else {
+          document.getElementById('msfirst').style.display =mptitle.style.display = fourth.style.display= fifth.style.display = 'flex';
+        }
+      }
+      article.onmouseleave = function (e){
+        var psId = article.id.replace('d', 'ps');
+        document.getElementById(psId).style.display = 'none';
+        if (article.id != 'dthird') {
+          mptitle.style.display =second.style.display = third.style.display= fourth.style.display= fifth.style.display = 'none';
+        }
+        else {
+          document.getElementById('msfirst').style.display =mptitle.style.display = fourth.style.display= fifth.style.display = 'none';
+        }
+      }
+    }
+ )
 
 var sum=0;
 document.getElementById('section').onwheel = function (event) {

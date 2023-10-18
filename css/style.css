@@ -201,12 +201,8 @@ margin-top: 40px;
 gap: 100px;
 }
 
-#psfirst, #pssecond, #psthird, #psfourth, #psfifth {
-  display: none;
-}
-
 .passing-score__article {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -231,6 +227,7 @@ font-family: 'Roboto Bold';
   }
 
   .min-points__title {
+    display: none;
     margin-bottom: 40px;
   }
 
@@ -241,12 +238,8 @@ font-family: 'Roboto Bold';
     gap: 30px;
   }
 
-  #msfirst, #mssecond, #msthird, #msfourth, #msfifth {
-    display: none;
-  }
-
   .min-score__article {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     max-width: 350px;
