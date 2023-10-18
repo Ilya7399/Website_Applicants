@@ -164,6 +164,7 @@ padding-bottom: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px 10px;
     max-width: 210px;
     width: 100%;
     background-color: var(--font-color);

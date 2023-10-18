@@ -2,7 +2,7 @@ const second = document.getElementById('mssecond');
 const third = document.getElementById('msthird');
 const fourth = document.getElementById('msfourth');
 const fifth = document.getElementById('msfifth');
-const mptitle = document.getElementById('mptitle');
+
 const elems = document.querySelectorAll('.direction-of-preparation__article').forEach(
     article => {
       article.onmouseenter = function (e) {
@@ -10,20 +10,20 @@ const elems = document.querySelectorAll('.direction-of-preparation__article').fo
         var psId = article.id.replace('d', 'ps');
         document.getElementById(psId).style.display = 'flex';
         if (article.id != 'dthird') {
-          mptitle.style.display =second.style.display = third.style.display= fourth.style.display= fifth.style.display = 'flex';
+          second.style.display =mptitle.style.display= third.style.display= fourth.style.display= fifth.style.display = 'flex';
         }
          else {
-          document.getElementById('msfirst').style.display =mptitle.style.display = fourth.style.display= fifth.style.display = 'flex';
+          document.getElementById('msfirst').style.display =mptitle.style.display= fourth.style.display= fifth.style.display = 'flex';
         }
       }
       article.onmouseleave = function (e){
         var psId = article.id.replace('d', 'ps');
         document.getElementById(psId).style.display = 'none';
         if (article.id != 'dthird') {
-          mptitle.style.display =second.style.display = third.style.display= fourth.style.display= fifth.style.display = 'none';
+          second.style.display = third.style.display= mptitle.style.display=fourth.style.display= fifth.style.display = 'none';
         }
         else {
-          document.getElementById('msfirst').style.display =mptitle.style.display = fourth.style.display= fifth.style.display = 'none';
+          document.getElementById('msfirst').style.display =mptitle.style.display=fourth.style.display= fifth.style.display = 'none';
         }
       }
     }
