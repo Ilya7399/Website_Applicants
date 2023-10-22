@@ -6,24 +6,29 @@ const fifth = document.getElementById('msfifth');
 const elems = document.querySelectorAll('.direction-of-preparation__article').forEach(
     article => {
       article.onmouseenter = function (e) {
-        console.log(article.id)
         var psId = article.id.replace('d', 'ps');
         document.getElementById(psId).style.display = 'flex';
+        document.getElementById(psId).style.animation = 'appearance 1s ease-in-out'
         if (article.id != 'dthird') {
           second.style.display =mptitle.style.display= third.style.display= fourth.style.display= fifth.style.display = 'flex';
+          second.style.animation =mptitle.style.animation= third.style.animation= fourth.style.animation= fifth.style.animation = 'appearance 1s ease-in-out';
         }
          else {
           document.getElementById('msfirst').style.display =mptitle.style.display= fourth.style.display= fifth.style.display = 'flex';
+          document.getElementById('msfirst').style.animation =mptitle.style.animation= fourth.style.animation= fifth.style.animation = 'appearance 1s ease-in-out';
         }
       }
       article.onmouseleave = function (e){
         var psId = article.id.replace('d', 'ps');
-        document.getElementById(psId).style.display = 'none';
+        document.getElementById(psId).style.animation = 'disappearance 1s ease-in-out'
+        setTimeout(function() {document.getElementById(psId).style.display = 'none'}, 1000);
         if (article.id != 'dthird') {
-          second.style.display = third.style.display= mptitle.style.display=fourth.style.display= fifth.style.display = 'none';
+          setTimeout(function() {second.style.display = third.style.display= mptitle.style.display=fourth.style.display= fifth.style.display = 'none'},1000)
+          second.style.animation =mptitle.style.animation= third.style.animation= fourth.style.animation= fifth.style.animation = 'disappearance 1s ease-in-out';
         }
         else {
-          document.getElementById('msfirst').style.display =mptitle.style.display=fourth.style.display= fifth.style.display = 'none';
+          setTimeout(function() {document.getElementById('msfirst').style.display =mptitle.style.display=fourth.style.display= fifth.style.display = 'none'},1000)
+          document.getElementById('msfirst').style.animation =mptitle.style.animation= fourth.style.animation= fifth.style.animation = 'disappearance 1s ease-in-out';
         }
       }
     }
