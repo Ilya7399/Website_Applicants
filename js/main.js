@@ -14,6 +14,7 @@ const elems = document.querySelectorAll('.direction-of-preparation__article').fo
           second.style.animation =mptitle.style.animation= third.style.animation= fourth.style.animation= fifth.style.animation = 'appearance 1s ease-in-out';
         }
          else {
+          second.style.display = third.style.display= fifth.style.display = 'none';
           document.getElementById('msfirst').style.display =mptitle.style.display= fourth.style.display= fifth.style.display = 'flex';
           document.getElementById('msfirst').style.animation =mptitle.style.animation= fourth.style.animation= fifth.style.animation = 'appearance 1s ease-in-out';
         }
@@ -22,13 +23,9 @@ const elems = document.querySelectorAll('.direction-of-preparation__article').fo
         var psId = article.id.replace('d', 'ps');
         document.getElementById(psId).style.animation = 'disappearance 1s ease-in-out'
         setTimeout(function() {document.getElementById(psId).style.display = 'none'}, 900);
-        if (article.id != 'dthird') {
-          setTimeout(function() {second.style.display = third.style.display= mptitle.style.display=fourth.style.display= fifth.style.display = 'none'},900)
-          second.style.animation =mptitle.style.animation= third.style.animation= fourth.style.animation= fifth.style.animation = 'disappearance 1s ease-in-out';
-        }
-        else {
-          setTimeout(function() {document.getElementById('msfirst').style.display =mptitle.style.display=fourth.style.display= fifth.style.display = 'none'},900)
-          document.getElementById('msfirst').style.animation =mptitle.style.animation= fourth.style.animation= fifth.style.animation = 'disappearance 1s ease-in-out';
+        if (article.id == 'dthird') {
+          setTimeout(function() {document.getElementById('msfirst').style.display = 'none'},900)
+          document.getElementById('msfirst').style.animation = 'disappearance 1s ease-in-out';
         }
       }
     }
