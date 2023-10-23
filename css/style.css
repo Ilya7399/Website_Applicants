@@ -502,22 +502,12 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 75px;
+    opacity: 0;
+    transition: all 1s;
+      transform: translateX(-100%);
     .admission-stage__text {
       margin: 10px 0;
     }
-    opacity: 0;
-    transition: all 1s;
-  }
-
-  .show {
-    opacity: 1;
-  }
-
-  .admission-stage__text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 400px;
   }
 
   .admission-stage:nth-child(2n) {
@@ -539,8 +529,16 @@ margin-bottom: 20px;
     }
   }
 
-  .admission-stage {
-    display: none;
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .admission-stage__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 400px;
   }
 
   .stage-numeration {
