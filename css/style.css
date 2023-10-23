@@ -480,10 +480,6 @@ margin-bottom: 20px;
     padding-bottom: 260px;
   }
 
-  #first, #second, #third, #fourth, #fifth {
-    display: none;
-  }
-
   .admission-stages__content {
     display: flex;
     flex-direction: column;
@@ -509,6 +505,12 @@ margin-bottom: 20px;
     .admission-stage__text {
       margin: 10px 0;
     }
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
   }
 
   .admission-stage__text-container {
@@ -519,7 +521,6 @@ margin-bottom: 20px;
   }
 
   .admission-stage:nth-child(2n) {
-    display: flex;
     flex-direction: row-reverse;
     .admission-stage__text-container {
       align-items: flex-start;
@@ -536,6 +537,10 @@ margin-bottom: 20px;
     .admission-stage__recommendation-text {
       text-align: end;
     }
+  }
+
+  .admission-stage {
+    display: none;
   }
 
   .stage-numeration {
