@@ -647,7 +647,7 @@ margin-bottom: 20px;
     justify-content: center;
   }
 
-  .questions-answers__row:nth-child(2n) {
+  .questions-answers__row:nth-child(4n+1) {
     flex-direction: row-reverse;
   }
 
@@ -668,17 +668,16 @@ margin-bottom: 20px;
   }
 
   .check>path {
+    stroke: var(--font-color);
     transition: 0.5s ease-in-out;
   }
 
   .questions-answers__row>article:hover {
-    border: 3px solid var(--font-color);
-    border-top: 5px solid var(--font-color);
     .questions-answers__text {
       color: var(--button-color);
     }
     .check>path {
-      stroke: var(--font-color);
+      stroke: var(--button-color);
     }
   }
 
@@ -688,6 +687,11 @@ margin-bottom: 20px;
     max-width: 445px;
     width: 100%;
     transition: 0.5s ease-in-out;
+  }
+
+  #afirst, #asecond, #athird, #afourth, #afifth, #asixth {
+    display: none;
+    justify-content: center;
   }
 
   .footer__row {
