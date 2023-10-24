@@ -276,6 +276,12 @@ font-family: 'Roboto Bold';
     color: var(--background-color);
   }
 
+  .words-cloud {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
   .why-mai__title {
     margin-top: 150px;
     margin-bottom: 60px;
@@ -504,10 +510,17 @@ margin-bottom: 20px;
     gap: 75px;
     opacity: 0;
     transition: all 1s;
-      transform: translateX(-100%);
     .admission-stage__text {
       margin: 10px 0;
     }
+  }
+
+  .left {
+    transform: translateX(-100%);
+  }
+
+  .right {
+    transform: translateX(100%);
   }
 
   .admission-stage:nth-child(2n) {
@@ -797,6 +810,10 @@ margin-bottom: 20px;
       padding-bottom: 100px;
     }
 
+  .words-cloud {
+    margin-top: 100px;
+  }
+
     .why-mai__title {
       margin-top: 100px;
     }
@@ -937,6 +954,10 @@ margin-bottom: 20px;
 
   .directions__title {
     padding-top: 40px;
+  }
+
+  .words-cloud {
+    margin-top: 50px;
   }
 
   .why-mai__title {
