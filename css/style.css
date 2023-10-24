@@ -276,11 +276,6 @@ font-family: 'Roboto Bold';
     color: var(--background-color);
   }
 
-  .word-cloud {
-    display: flex;
-    justify-content: center;
-  }
-
   .why-mai__title {
     margin-top: 150px;
     margin-bottom: 60px;
