@@ -586,6 +586,11 @@ margin-bottom: 20px;
     flex-direction: column;
   }
 
+  .priority-system__content>table {
+    max-width: 1000px;
+    align-self: center;
+  }
+
   .priority-system__step {
     display: flex;
     justify-content: space-between;
@@ -611,11 +616,15 @@ margin-bottom: 20px;
     font-family: 'Roboto Bold';
     font-size: 2.25rem;
     color: var(--font-color);
-    padding: 32px 84px;
+    padding: 25px 75px;
   }
 
   .first-table-text>td:nth-child(4n + 1), .first-table-text>td:nth-child(2n) {
     border: 4px solid var(--font-color);
+  }
+
+  .first-table-text>td:nth-child(2n) {
+    max-width: 20px;
   }
 
   .second-table-text>td {
