@@ -515,12 +515,8 @@ margin-bottom: 20px;
     }
   }
 
-  .left {
+  .floating-left {
     transform: translateX(-100%);
-  }
-
-  .right {
-    transform: translateX(100%);
   }
 
   .admission-stage:nth-child(2n) {
