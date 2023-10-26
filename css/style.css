@@ -789,10 +789,6 @@ margin-bottom: 20px;
       box-shadow: 0 0 100px var(--button-color);
     }
 
-    .active-life__section {
-      margin-top: 150px;
-  }
-
   .first-table-text>td {
     font-size: 2rem;
   }
@@ -1106,6 +1102,10 @@ margin-bottom: 20px;
 
 .active-life__section {
   margin-bottom: 70px;
+}
+
+.admission-stages__section {
+  padding-bottom: 50px;
 }
 
 .admission-stages__title {
